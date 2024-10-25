@@ -19,4 +19,4 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           protocol: ftps
           port: 21 # todo replace with your web hosts ftps port
-          local: "airdrop/" # Specify the specific folder to deploy
+          local-dir: "airdrop/" # Specify the specific folder to deploy
