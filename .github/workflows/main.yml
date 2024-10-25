@@ -1,27 +1,22 @@
-name: Deploy website on push
 on:
   push:
     branches:
       - main
-
+name: 🚀 Deploy website on push
 jobs:
   web-deploy:
-    name: Deploy
+    name: 🎉 Deploy
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v3
 
-      - name: Print working directory and list files
-        run: |
-          pwd
-          ls -la
-
-      - name: Sync files
+      - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.3.3
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           protocol: ftps
-          port: 21
-          local-dir: "airdrop/"  # Pastikan path relatif benar
+          port: 21 # todo replace with your web hosts ftps port
+          local-dir: "/airdrop" # Specify the specific folder to deploy
