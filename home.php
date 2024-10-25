@@ -1,3 +1,4 @@
+<?php require "config/homeConfig.php" ?>
 <!doctype html>
 <html lang="en">
 
@@ -85,7 +86,7 @@
     <div class="appHeader transparent">
         <div class="left">
             <div class="headerButton" style="color: white;">
-                <ion-icon name="person-circle-sharp"></ion-icon> MimLay (CEO)
+                <ion-icon name="person-circle-sharp"></ion-icon> <?= $_SESSION['usernameDB'] ?> (CEO)
             </div>
         </div>
         <!-- <div class="pageTitle">
@@ -112,7 +113,7 @@
                             <div class="box-info text-center">
                                 <span class="text-white">Earn per tab</span> <br>
                                 <img src="assets/img/coin.svg" alt="" >
-                                <span class="text-white">+12</span>
+                                <span class="text-white">+<?= formatAngka($getTap['tap_total']) ?></span>
                             </div>
                         </div>
 
@@ -121,10 +122,9 @@
                             <div class="box-info text-center">
                                 <span class="text-white">Profit per hour</span> <br>
                                 <img src="assets/img/coin.svg" alt="" >
-                                <span class="text-white">+12k</span>
+                                <span class="text-white">+<?= formatAngka($getDataUser['user_profit_per_our']) ?></span>
                             </div>
                         </div>
-
                     </div>
                     <!-- temp balance -->
                     <div class="balance-home mb-2">
@@ -145,6 +145,7 @@
                             <span>Level 1/10</span>
                         </div>
                     </div>
+                    
                     <!-- lvl progress -->
                     <div class="progress mb-4">
                         <div class="progress-bar" role="progressbar" style="width: 25%; background-color: #ff2ca9;" aria-valuenow="25"
@@ -163,7 +164,7 @@
                         <div class="col">
                             <div class="box-info text-center">
                                 <img src="assets/img/coin.svg" alt="" >
-                                <span>6000/6000</span>
+                                <span id="max_tap"></span>
                             </div>
                         </div>
                         <div class="col">
