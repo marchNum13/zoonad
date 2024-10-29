@@ -180,6 +180,21 @@ async function init() {
             updateLastTapCoins(taps - addCoinValue, maxCoinValue);
             coins = getCoinsFromStorage();
             updateCoins(coins + addCoinValue);
+            // // Create a new span element for the animation
+            // const coinAnimation = document.createElement('span');
+            // coinAnimation.classList.add('coin-animation');
+            // coinAnimation.textContent = `+${addCoinValue}`;
+
+            // // Append the animation element to the button
+            // tapButton.querySelector('.tap').appendChild(coinAnimation);
+
+            // // Trigger the animation
+            // coinAnimation.classList.add('show');
+
+            // // Remove the animation after a short delay
+            // setTimeout(() => {
+            //     coinAnimation.remove();
+            // }, 500); // Adjust the delay as needed
         }
     });
 

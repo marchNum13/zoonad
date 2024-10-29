@@ -48,8 +48,8 @@
             margin-bottom: 10px;
         }
         .tap{
-            width: 80%;
-            height: 80%;
+            width: 90%;
+            height: 90%;
             /* border: 2px solid #ff2ca9; */
             padding: 3px;
             /* background-image: linear-gradient(to right bottom, #64053d, #540d43, #431346, #2f1647, #1a1844);
@@ -67,6 +67,7 @@
             /* min-width: 50px;  */
             /* max-width: 270px; */
             max-width: 95%;
+            filter: drop-shadow(17px -9px 15px #000000);
         }
         .item-center-bl {
             display: flex;
@@ -91,7 +92,7 @@
     <div class="appHeader transparent">
         <div class="left">
             <div class="headerButton" style="color: white;">
-                <ion-icon name="person-circle-sharp"></ion-icon> <?= $_SESSION['usernameDB'] ?> (CEO)
+                <ion-icon name="person-circle-sharp"></ion-icon> <?= $_SESSION['usernameDB'] ?> (KEEPER)
             </div>
         </div>
         <!-- <div class="pageTitle">
@@ -111,7 +112,7 @@
         <div class="section full">
             <div class="card main">
                 <div class="card-body">
-                    <div class="row mb-5 mt-2">
+                    <div class="row mb-3 mt-2">
 
                         <!-- earn per tab -->
                         <div class="col">
@@ -152,16 +153,17 @@
                     </div>
                     
                     <!-- lvl progress -->
-                    <div class="progress mb-4">
+                    <div class="progress mb-2">
                         <div class="progress-bar" role="progressbar" style="width: 25%; background-color: #ff2ca9;" aria-valuenow="25"
                             aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                     
 
                     <!-- tap -->
-                    <button type="button" style="text-decoration: none; background: none; border: none" class="item-center-bl mb-5" id="tap_button">
+                    <button type="button" style="text-decoration: none; background: none; border: none" class="item-center-bl mb-2" id="tap_button">
                         <div class="tap">
                             <img src="assets/img/Tap2.png" alt="">
+                            <!-- <span class="coin-animation"></span> -->
                         </div>
                     </button>
 
