@@ -12,16 +12,18 @@ class cardTableClass extends connMySQLClass{
             // SET QUERY
             $sql = "CREATE TABLE $this->table_name (
                 id INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-                card_id INT(11) NOT NULL UNIQUE,
+                card_id VARCHAR(11) NOT NULL UNIQUE,
                 card_img TEXT NOT NULL,
                 card_name VARCHAR(500) NOT NULL,
                 card_desc TEXT NOT NULL,
+                card_category VARCHAR(11) NOT NULL,
                 card_profit DOUBLE NOT NULL,
                 card_start_fee DOUBLE NOT NULL,
                 card_up_fee DOUBLE NOT NULL,
                 card_category_unlock ENUM('INV FRIENDS', 'INV MORE FRIENDS', 'OWNED OTHER CARD', 'NONE') NOT NULL DEFAULT 'NONE',
                 card_unlock_detail TEXT NOT NULL DEFAULT 'NONE',
-                card_unlock_num_condition INT(11) NOT NULL DEFAULT 'NONE',
+                card_unlock_id VARCHAR(11) NOT NULL DEFAULT 'NONE',
+                card_unlock_num_condition INT(11) NOT NULL DEFAULT '0',
                 card_date TEXT NOT NULL
             )";
             // EXECUTE THE QUERY TO CREATE TABLE

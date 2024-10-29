@@ -70,6 +70,7 @@
         }
 
     </style>
+    <link rel="stylesheet" href="assets/css/custome.css">
 </head>
 
 <body>
@@ -84,7 +85,7 @@
     <div id="appCapsule">
 
         <div class="section full mb-3 text-center">
-            <img src="assets/img/earn.svg" class="earn-img" alt="">
+            <img src="assets/img/coin.png" class="earn-img" alt="">
             <h1 class="text-white">Get more reward</h1>
         </div>
 
@@ -98,10 +99,10 @@
                 <!-- item -->
                 <a href="" data-bs-toggle="modal" data-bs-target="#actionSheet" class="item bg-transparent">
                     <div class="detail">
-                        <img src="assets/img/yt.svg" alt="img" class="image-block imaged w48">
+                        <img src="assets/img/yt_zoonad.png" alt="img" class="image-block imaged w48">
                         <div>
                             <strong class="text-white">Subscribe</strong>
-                            <span class="fee text-secondary"><img src="assets/img/coin.svg" alt=""> +100</span>
+                            <span class="fee text-secondary"><img src="assets/img/bl.svg" alt=""> +100</span>
                         </div>
                     </div>
                     <div class="right">
@@ -112,10 +113,10 @@
                 <!-- item -->
                 <a href="" class="item bg-transparent">
                     <div class="detail">
-                        <img src="assets/img/yt.svg" alt="img" class="image-block imaged w48">
+                        <img src="assets/img/yt_zoonad.png" alt="img" class="image-block imaged w48">
                         <div>
                             <strong class="text-white">Watch Video</strong>
-                            <span class="fee text-secondary"><img src="assets/img/coin.svg" alt=""> +100</span>
+                            <span class="fee text-secondary"><img src="assets/img/bl.svg" alt=""> +100</span>
                         </div>
                     </div>
                     <div class="right">
@@ -136,10 +137,10 @@
                 <!-- item -->
                 <a href="" class="item bg-transparent">
                     <div class="detail">
-                        <img src="assets/img/ig.svg" alt="img" class="image-block imaged w48">
+                        <img src="assets/img/ig_zoonad.png" alt="img" class="image-block imaged w48">
                         <div>
                             <strong class="text-white">Follow our Instagram</strong>
-                            <span class="fee text-secondary"><img src="assets/img/coin.svg" alt=""> +100</span>
+                            <span class="fee text-secondary"><img src="assets/img/bl.svg" alt=""> +100</span>
                         </div>
                     </div>
                     <div class="right">
@@ -150,10 +151,10 @@
                 <!-- item -->
                 <a href="" class="item bg-transparent">
                     <div class="detail">
-                        <img src="assets/img/tl.svg" alt="img" class="image-block imaged w48">
+                        <img src="assets/img/tele_zoonad.png" alt="img" class="image-block imaged w48">
                         <div>
                             <strong class="text-white">Join our telegram channel</strong>
-                            <span class="fee text-secondary"><img src="assets/img/coin.svg" alt=""> +100</span>
+                            <span class="fee text-secondary"><img src="assets/img/bl.svg" alt=""> +100</span>
                         </div>
                     </div>
                     <div class="right">
@@ -164,10 +165,10 @@
                 <!-- item -->
                 <a href="" class="item bg-transparent">
                     <div class="detail">
-                        <img src="assets/img/x.svg" alt="img" class="image-block imaged w48">
+                        <img src="assets/img/x_zoonad.png" alt="img" class="image-block imaged w48">
                         <div>
                             <strong class="text-white">Follow our X</strong>
-                            <span class="fee text-secondary"><img src="assets/img/coin.svg" alt=""> +100</span>
+                            <span class="fee text-secondary"><img src="assets/img/bl.svg" alt=""> +100</span>
                         </div>
                     </div>
                     <div class="right">
@@ -192,11 +193,11 @@
                         <div class="action-sheet-content">
                             
                             <div class="mb-2 text-center">
-                                <img src="assets/img/yt.svg" alt="">
+                                <img src="assets/img/yt_zoonad.png" alt="">
                                 <h2 class="text-white mt-2">Subscribe our channel</h2>
                                 <p style="font-size: small;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae illo laborum delectus aliquid esse voluptate, doloremque quasi explicabo, accusamus </p>
                                 <button class="btn btn-pink">Subscribe</button> <br><br>
-                                <span class="fee"><img src="assets/img/coin.svg" alt=""> +100</span>
+                                <span class="fee"><img src="assets/img/bl.svg" alt=""> +100</span>
                             </div>
 
                             <div class="form-group basic">
@@ -220,25 +221,25 @@
     <div class="appBottomMenu no-border">
         <a href="home" class="item">
             <div class="col">
-                <ion-icon name="home-outline"></ion-icon>
+                <img class="icon-nav" src="assets/img/zoonad_home.png" alt="">
                 <strong>Home</strong>
             </div>
         </a>
         <a href="mine" class="item">
             <div class="col">
-                <ion-icon name="hammer-outline"></ion-icon>
+            <img class="icon-nav" src="assets/img/zoonad_mine.png" alt="">
                 <strong>Mine</strong>
             </div>
         </a>
         <a href="friends" class="item">
             <div class="col">
-                <ion-icon name="people-outline"></ion-icon>
+                <img class="icon-nav" src="assets/img/zoonad_friend.png" alt="">
                 <strong>Friends</strong>
             </div>
         </a>
         <a href="earn" class="item active">
             <div class="col">
-                <ion-icon name="diamond-outline"></ion-icon>
+                <img class="icon-nav" src="assets/img/zoonad_earn.png" alt="">
                 <strong>Earn</strong>
             </div>
         </a>

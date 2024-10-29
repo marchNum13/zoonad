@@ -1,5 +1,5 @@
 
-
+<?php sleep(3) ?>
 <!doctype html>
 <html lang="en">
 
@@ -48,7 +48,7 @@
     <script src="assets/js/base.js"></script>
 
     <?php require "config/authConfig.php" ?>
-    <?php if($_SESSION['login_zoo']){ ?>
+    <?php if($_SESSION['login_zoo']){  ?>
         <script>
             // Fungsi untuk menyimpan nilai koin ke localStorage
             async function setCoinsToStorage(coins, last) {

@@ -81,7 +81,7 @@ if(isset($_GET["key"]) && isset($_GET["user_id"])){
 function createRefferalCode() {
     global $userTableClass;
 
-    $referal = substr(md5(uniqid(rand(), true)), 0, 7);
+    $referal = substr(md5(uniqid(rand(), true)), 0, 11);
 
     $check = $userTableClass->selectUser(
         fields: "user_code_refferal",

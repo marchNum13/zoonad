@@ -16,7 +16,9 @@
             -moz-box-shadow: 2px -15px 18px -3px rgba(222,64,189,0.39);
             border-top: 2px solid #ff2ca9;
             height: auto;
-            background: #202022;
+            background-image: url("assets/img/bg/bg-main.png");
+            background-size: cover;
+            background-position: center;
         }
         .box-info{
             background-color: rgba(255, 255, 255, 0.1);
@@ -41,21 +43,22 @@
         }
         .balance-home .d-flex img {
             min-width: 50px; /* Sesuaikan ukuran gambar */
-            max-width: 70px;
+            max-width: 50px;
             margin-right: 10px;
+            margin-bottom: 10px;
         }
         .tap{
             width: 80%;
             height: 80%;
-            border: 2px solid #ff2ca9;
+            /* border: 2px solid #ff2ca9; */
             padding: 3px;
-            background-image: linear-gradient(to right bottom, #64053d, #540d43, #431346, #2f1647, #1a1844);
+            /* background-image: linear-gradient(to right bottom, #64053d, #540d43, #431346, #2f1647, #1a1844);
             border-radius: 200px 200px 200px 200px;
             -webkit-border-radius: 200px 200px 200px 200px;
             -moz-border-radius: 200px 200px 200px 200px;
             box-shadow: 4px -21px 51px 2px rgba(222,64,189,0.74) inset;
             -webkit-box-shadow: 4px -21px 51px 2px rgba(222,64,189,0.74) inset;
-            -moz-box-shadow: 4px -21px 51px 2px rgba(222,64,189,0.74) inset;
+            -moz-box-shadow: 4px -21px 51px 2px rgba(222,64,189,0.74) inset; */
             display: flex; /* Make the element a flex container */
             justify-content: center; /* Center content horizontally */
             align-items: center; /* Center content vertically */
@@ -71,7 +74,9 @@
             align-items: center;
         }
 
+
     </style>
+    <link rel="stylesheet" href="assets/css/custome.css">
 </head>
 
 <body>
@@ -112,7 +117,7 @@
                         <div class="col">
                             <div class="box-info text-center">
                                 <span class="text-white">Earn per tab</span> <br>
-                                <img src="assets/img/coin.svg" alt="" >
+                                <img src="assets/img/bl.svg" alt="" class="pt-10">
                                 <span class="text-white">+<?= formatAngka($getTap['tap_total']) ?></span>
                             </div>
                         </div>
@@ -121,7 +126,7 @@
                         <div class="col">
                             <div class="box-info text-center">
                                 <span class="text-white">Profit per hour</span> <br>
-                                <img src="assets/img/coin.svg" alt="" >
+                                <img src="assets/img/bl.svg" alt="" class="pt-10">
                                 <span class="text-white">+<?= formatAngka($getDataUser['user_profit_per_our']) ?></span>
                             </div>
                         </div>
@@ -129,7 +134,7 @@
                     <!-- temp balance -->
                     <div class="balance-home mb-2">
                         <div class="d-flex">
-                            <img src="assets/img/bl.svg" alt="">
+                            <img src="assets/img/bl.svg" alt="" class="pt-10">
                             <h1 class="text-white" id="coin_count">0</h1>
                         </div>
                     </div>
@@ -138,11 +143,11 @@
                     <div class="row">
                         <!-- label lvl -->
                         <div class="col text-start">
-                            <span>Bronze ></span>
+                            <span class="text-white">Bronze ></span>
                         </div>
                         <!-- num lvl -->
                         <div class="col text-end">
-                            <span>Level 1/10</span>
+                            <span class="text-white">Level 1/10</span>
                         </div>
                     </div>
                     
@@ -156,21 +161,21 @@
                     <!-- tap -->
                     <button type="button" style="text-decoration: none; background: none; border: none" class="item-center-bl mb-5" id="tap_button">
                         <div class="tap">
-                            <img src="assets/img/kong.svg" alt="">
+                            <img src="assets/img/Tap2.png" alt="">
                         </div>
                     </button>
 
                     <div class="row mb-5">
                         <div class="col">
                             <div class="box-info text-center">
-                                <img src="assets/img/coin.svg" alt="" >
-                                <span id="max_tap"></span>
+                                <img src="assets/img/bl.svg" alt="" class="pt-10">
+                                <span class="text-white" id="max_tap"></span>
                             </div>
                         </div>
                         <div class="col">
                             <div class="box-info text-center">
-                                <img src="assets/img/rc.svg" alt="" >
-                                <span>Booster</span>
+                                <img src="assets/img/zoonad_upgrade.png" alt="" >
+                                <span class="text-white">Booster</span>
                             </div>
                         </div>
                     </div>
@@ -188,25 +193,25 @@
     <div class="appBottomMenu no-border">
         <a href="home" class="item active">
             <div class="col">
-                <ion-icon name="home-outline"></ion-icon>
+                <img class="icon-nav" src="assets/img/zoonad_home.png" alt="">
                 <strong>Home</strong>
             </div>
         </a>
         <a href="mine" class="item">
             <div class="col">
-                <ion-icon name="hammer-outline"></ion-icon>
+            <img class="icon-nav" src="assets/img/zoonad_mine.png" alt="">
                 <strong>Mine</strong>
             </div>
         </a>
         <a href="friends" class="item">
             <div class="col">
-                <ion-icon name="people-outline"></ion-icon>
+                <img class="icon-nav" src="assets/img/zoonad_friend.png" alt="">
                 <strong>Friends</strong>
             </div>
         </a>
         <a href="earn" class="item">
             <div class="col">
-                <ion-icon name="diamond-outline"></ion-icon>
+                <img class="icon-nav" src="assets/img/zoonad_earn.png" alt="">
                 <strong>Earn</strong>
             </div>
         </a>

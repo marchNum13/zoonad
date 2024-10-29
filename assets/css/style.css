@@ -197,7 +197,7 @@ a:hover, a:active, a:focus {
 }
 
 .appBottomMenu {
-  min-height: 56px;
+  min-height: 60px;
   position: fixed;
   z-index: 999;
   width: 100%;
@@ -1158,6 +1158,8 @@ blockquote.blockquote .blockquote-footer {
 .imaged.square {
   border-radius: 0 !important;
 }
+
+
 
 #loader {
   position: fixed;

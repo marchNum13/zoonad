@@ -24,6 +24,7 @@
         }
 
     </style>
+    <link rel="stylesheet" href="assets/css/custome.css">
 </head>
 
 <body>
@@ -84,25 +85,25 @@
     <div class="appBottomMenu no-border">
         <a href="home" class="item">
             <div class="col">
-                <ion-icon name="home-outline"></ion-icon>
+                <img class="icon-nav" src="assets/img/zoonad_home.png" alt="">
                 <strong>Home</strong>
             </div>
         </a>
         <a href="mine" class="item">
             <div class="col">
-                <ion-icon name="hammer-outline"></ion-icon>
+            <img class="icon-nav" src="assets/img/zoonad_mine.png" alt="">
                 <strong>Mine</strong>
             </div>
         </a>
         <a href="friends" class="item active">
             <div class="col">
-                <ion-icon name="people-outline"></ion-icon>
+                <img class="icon-nav" src="assets/img/zoonad_friend.png" alt="">
                 <strong>Friends</strong>
             </div>
         </a>
         <a href="earn" class="item">
             <div class="col">
-                <ion-icon name="diamond-outline"></ion-icon>
+                <img class="icon-nav" src="assets/img/zoonad_earn.png" alt="">
                 <strong>Earn</strong>
             </div>
         </a>

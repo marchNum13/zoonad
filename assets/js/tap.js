@@ -65,7 +65,7 @@ async function getProfitPerOur() {
         return parseFloat(data.coin_per_our, 10);
     } catch (error) {
         console.error('Error fetching MAX_COIN value:', error);
-        return 1; // Nilai default jika gagal mengambil dari database
+        return 0; // Nilai default jika gagal mengambil dari database
     }
 }
 
@@ -199,8 +199,10 @@ async function init() {
     }, 3000);
 
     setInterval(() => {
-        coins = getCoinsFromStorage();
-        updateCoins(coins + profitPerSec);
+        if(profitPerSec > 0){
+            coins = getCoinsFromStorage();
+            updateCoins(coins + profitPerSec);
+        }
     }, 2000);
 }
 
