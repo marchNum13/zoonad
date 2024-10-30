@@ -1,7 +1,7 @@
 const coinCountElement = document.getElementById('coin_count');
 const maxTapCoinElement = document.getElementById('max_tap');
 const tapButton = document.getElementById('tap_button');
-
+const numberAdd = document.getElementById('number-add');
 
 let coins = 0;
 let taps = 0;
@@ -180,22 +180,16 @@ async function init() {
             updateLastTapCoins(taps - addCoinValue, maxCoinValue);
             coins = getCoinsFromStorage();
             updateCoins(coins + addCoinValue);
-            // // Create a new span element for the animation
-            // const coinAnimation = document.createElement('span');
-            // coinAnimation.classList.add('coin-animation');
-            // coinAnimation.textContent = `+${addCoinValue}`;
 
-            // // Append the animation element to the button
-            // tapButton.querySelector('.tap').appendChild(coinAnimation);
-
-            // // Trigger the animation
-            // coinAnimation.classList.add('show');
-
-            // // Remove the animation after a short delay
-            // setTimeout(() => {
-            //     coinAnimation.remove();
-            // }, 500); // Adjust the delay as needed
+            numberAdd.textContent = "+" + addCoinValue;
+            // Add the animation class to the number-add element
+            numberAdd.classList.add('animate-number');
         }
+        // After a short delay, remove the animation class
+        setTimeout(() => {
+            numberAdd.classList.remove('animate-number');
+            numberAdd.textContent = '';
+        }, 500); // Adjust the delay as needed
     });
 
     taps = getLastTapFromStorage();

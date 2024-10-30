@@ -1,13 +1,46 @@
-.coin-animation {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+.item-center-bl {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.coin-animation.show {
-    opacity: 1;
+.item-center-bl img{
+    /* min-width: 50px;  */
+    /* max-width: 270px; */
+    max-width: 95%;
+    transition: transform 0.2 ease;
+    filter: drop-shadow(14px 14px 8px #000000);
+}
+
+.item-center-bl img:active {
+    transform: scale(0.96);
+    filter: drop-shadow(4px 7px 5px #000000);
+}
+
+.number-add{
+    position: absolute;
+    top: 45%;
+    font-size: 30px;
+    opacity: 80%;
+}
+
+.animate-number {
+    animation: numberAnimation 0.5s ease-in-out;
+}
+
+@keyframes numberAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Mulai dari bawah */
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(0); /* Posisi tengah */
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-20px); /* Ke atas */
+    }
 }
 
 .icon-nav{

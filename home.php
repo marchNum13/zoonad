@@ -47,34 +47,6 @@
             margin-right: 10px;
             margin-bottom: 10px;
         }
-        .tap{
-            width: 90%;
-            height: 90%;
-            /* border: 2px solid #ff2ca9; */
-            padding: 3px;
-            /* background-image: linear-gradient(to right bottom, #64053d, #540d43, #431346, #2f1647, #1a1844);
-            border-radius: 200px 200px 200px 200px;
-            -webkit-border-radius: 200px 200px 200px 200px;
-            -moz-border-radius: 200px 200px 200px 200px;
-            box-shadow: 4px -21px 51px 2px rgba(222,64,189,0.74) inset;
-            -webkit-box-shadow: 4px -21px 51px 2px rgba(222,64,189,0.74) inset;
-            -moz-box-shadow: 4px -21px 51px 2px rgba(222,64,189,0.74) inset; */
-            display: flex; /* Make the element a flex container */
-            justify-content: center; /* Center content horizontally */
-            align-items: center; /* Center content vertically */
-        }
-        .tap img{
-            /* min-width: 50px;  */
-            /* max-width: 270px; */
-            max-width: 95%;
-            filter: drop-shadow(17px -9px 15px #000000);
-        }
-        .item-center-bl {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
 
     </style>
     <link rel="stylesheet" href="assets/css/custome.css">
@@ -132,6 +104,7 @@
                             </div>
                         </div>
                     </div>
+
                     <!-- temp balance -->
                     <div class="balance-home mb-2">
                         <div class="d-flex">
@@ -158,13 +131,10 @@
                             aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                     
-
-                    <!-- tap -->
+                    <!-- button tap -->
                     <button type="button" style="text-decoration: none; background: none; border: none" class="item-center-bl mb-2" id="tap_button">
-                        <div class="tap">
-                            <img src="assets/img/Tap2.png" alt="">
-                            <!-- <span class="coin-animation"></span> -->
-                        </div>
+                        <img src="assets/img/Tap2.png" alt="">
+                        <span class="number-add text-white" id="number-add"></span>
                     </button>
 
                     <div class="row mb-5">
